@@ -1,0 +1,4 @@
+cron:
+- description: "request data"
+  url: http://bitkubv09.appspot.com
+  schedule: every 1 minute
