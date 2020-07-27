@@ -21,8 +21,8 @@ start = 1593702012.6649423
 
 @app.route('/')
 def hello():
-    j = 1
-    while j < 200:  
+    #j = 1
+    #while j < 200:  
         zrx=bitkub.ticker(sym='THB_ZRX')
         x = zrx.get('THB_ZRX')
         last=x.get('last')
@@ -32,7 +32,7 @@ def hello():
         #seconds = int(time.time()-start) % 60
         #sleeptime = 60 - seconds
         #time.sleep(sleeptime)
-    return r.text
+return r.text
 
 
 if __name__ == '__main__':
