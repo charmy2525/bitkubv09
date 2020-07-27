@@ -28,10 +28,10 @@ def hello():
         last=x.get('last')
         msg = last
         r = requests.post(url, headers=headers, data = {'message':msg})
-        print (r.text)
-        seconds = int(time.time()-start) % 60
-        sleeptime = 60 - seconds
-        time.sleep(sleeptime)
+        #print (r.text)
+        #seconds = int(time.time()-start) % 60
+        #sleeptime = 60 - seconds
+        #time.sleep(sleeptime)
     return r.text
 
 
