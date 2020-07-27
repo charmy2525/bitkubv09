@@ -29,8 +29,8 @@ def hello():
         msg = last
         r = requests.post(url, headers=headers, data = {'message':msg})
         print (r.text)
-        seconds = int(time.time()-start) % 3600
-        sleeptime = 3600 - seconds
+        seconds = int(time.time()-start) % 60
+        sleeptime = 60 - seconds
         time.sleep(sleeptime)
     return r.text
 
