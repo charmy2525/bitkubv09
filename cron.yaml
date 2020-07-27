@@ -1,4 +1,4 @@
 cron:
 - description: "request data"
   url: /home
-  schedule: every 1 minute
+  schedule: every 1 min
